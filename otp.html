@@ -9,8 +9,8 @@
     <meta property="og:url" content="">
     <meta property="og:image" content="">
 
-    <title>Splash </title>
-    <link rel="icon" href="assets/images/favicon.png">
+    <title>OTP </title>
+    <link rel="icon" href="assets/images/login/logo.png">
 
     <!-- CSS Files-->
     <!--normalize css-->
@@ -29,7 +29,7 @@
     <!-- responsive css -->
     <link rel="stylesheet" href="assets/css/responsive.css">
   </head>
-  <body dir="rtl">
+  <body  dir="rtl">
     
     <!--
     ===================================================================
@@ -37,20 +37,30 @@
     ===================================================================
     -->
 
-    <section class="ar_registerLogin_area_section span">
-      <div class="ar_registerLogin_area_sectionSpan reg">
+    <section class="ar_registerLogin_area_section ">
+      <div class="ar_registerLogin_area_sectionSpan ar_singin_area_section">
         <div class="ar_login_area">
-          <div class="ar_login_area_content">
-            <div class="ar_login_logo">
+          <div class="ar_signin_area_content ">
+            <div class="ar_login_logo ar_signLogo">
               <a href="#"><img src="assets/images/login/logo.png" alt="logo"></a>
             </div>
-            <div class="ar_login_form">
-              <form action="">
-                <div class="ar_login_form_group">
-                  <button>تسجيل دخول</button>
-                  <button>سجل الآن</button>
+            <div class="ar_signin_form_area">
+                 <h2>تسجيل دخول</h2>
+                 <p>ادخل الرمز المكون من 4 أرقام المرسل إلى رقم جوالك</p>
+                 <div class="ar_otp_area">
+                    <form action="" class="">
+                    <input class="otp" type="text" oninput='digitValidate(this)' onkeyup='tabChange(1)' maxlength=1 >
+                    <input class="otp" type="text" oninput='digitValidate(this)' onkeyup='tabChange(2)' maxlength=1 >
+                    <input class="otp" type="text" oninput='digitValidate(this)' onkeyup='tabChange(3)' maxlength=1 >
+                    <input class="otp" type="text" oninput='digitValidate(this)'onkeyup='tabChange(4)' maxlength=1 >
+                    </form>
+                    <div class="ar_otp_submit">
+                        <input type="submit" value="تحقق">
+                    </div>
+                    <p>رجوع</p>
+                    
+                            
                 </div>
-              </form>
             </div>
           </div>
         </div>
@@ -66,7 +76,22 @@
     -->
 
 
+    <script>
+        let digitValidate = function(ele){
+            console.log(ele.value);
+            ele.value = ele.value.replace(/[^0-9]/g,'');
+            }
 
+            let tabChange = function(val){
+                let ele = document.querySelectorAll('input');
+                if(ele[val-1].value != ''){
+                ele[val].focus()
+                }else if(ele[val-1].value == ''){
+                ele[val-2].focus()
+                }   
+            }
+
+    </script>
 
 
 

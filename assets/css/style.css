@@ -5,6 +5,7 @@
 */
 body{
 	margin: 0;
+	font-family: 'Cairo', sans-serif;
 }
 h1,h2,h3,h4,h5,h6,p{
 	margin: 0;
@@ -17,3 +18,276 @@ ul{
 	margin: 0;
 	list-style: none;
 }
+
+
+
+
+
+
+
+
+
+/*
+===================================================================
+                    Start Register Login CSS
+===================================================================
+*/
+.ar_registerLogin_area_section{
+	height: 100vh;
+}
+
+.ar_registerLogin_area_section{
+	background: url('../images/login/Bg.png') no-repeat scroll 0 0 / 100% 100%;
+	
+	position: relative;
+	overflow: hidden;
+	z-index: 999999;
+}
+.ar_registerLogin_area_sectionSpan{
+	padding: 298px 0px;
+}
+.ar_registerLogin_area_section::after {
+	content: "";
+	position: absolute;
+	background: url('../images/login/isolatonBuilding.png');
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 60%;
+	bottom: -22%;
+	left: 0;
+	right: 0;
+	text-align: center;
+	background-size: 103% 65%;
+	z-index: -1;
+}
+.ar_registerLogin_area_section::before {
+	content: "";
+	position: absolute;
+	background: url('../images/login/Isolation_Mode.png');
+	background-repeat: no-repeat;
+	width: 10%;
+	height: 50%;
+	top: 0;
+	left: 90%;
+	right: 0;
+	text-align: center;
+}
+.ar_registerLogin_area_sectionSpan{
+	position: relative;
+}
+.ar_registerLogin_area_sectionSpan::after {
+	content: "";
+	position: absolute;
+	background: url('../images/login/bgaft.png');
+	background-repeat: no-repeat;
+	width: 15%;
+	height: 25%;
+	top: 0;
+	left: 0;
+	right: 86%;
+	text-align: center;
+}
+.ar_registerLogin_area_sectionSpan::before {
+	content: "";
+	position: absolute;
+	background: url('../images/login/buildingRound.png');
+	background-repeat: no-repeat;
+	width: 33%;
+	height: 55%;
+	top: 70%;
+	left: 0px;
+	text-align: center;
+	bottom: 22px;
+	background-size: 100%;
+}
+.ar_login_area_content{
+	text-align: center;
+}
+.ar_login_form_group button{
+	background-color: #fff;
+	border: none;
+	outline: none;
+	padding: 8px 15px;
+	max-width: 300px;
+	width: 100%;
+	display: block;
+	margin: auto;
+	margin-bottom: 20px;
+	border-radius: 5px;
+	
+	color: #347AE2;
+	font-weight: 700;
+	font-size: 20px;
+}
+.ar_login_form {
+	margin-top: -100px;
+}
+.ar_login_logo a img{
+	width: 400px;
+}
+.ar_login_logo{
+	margin-top: -100px;
+}
+
+
+/* sign in */
+.ar_signin_form_area{
+	max-width: 400px;
+	width: 100%;
+	background-color: #fff;
+	border-radius: 10px;
+	padding: 30px;
+	margin: auto;
+	margin-top: -50px;
+}
+.ar_singin_area_section{
+	padding: 110px;
+}
+.ar_signLogo{
+	text-align: center;
+}
+.ar_signLogo a img{
+	width: 300px;
+}
+.ar_signin_form_area h2{
+	color: #347AE2;
+	font-weight: 700;
+	font-size: 32px;
+	text-align: center;
+}
+.ar_signIn_form{
+	margin-top: 30px;
+}
+.ar_signIn_form_group label {
+	color: #000000;
+	font-weight: 700;
+	font-size: 12px;
+	display: block;
+	transform: translate(-15px, 5px);
+}
+.ar_signIn_form_group span{
+	color: #F80101;
+	font-size: 12px;
+	font-weight: 400;
+	display: block;
+}
+.ar_signIn_form_group input{
+	width: 100%;
+	border: 1px solid #EAEAEA;
+	outline: none;
+	padding: 10px 15px;
+	border-radius: 10px;
+}
+.ar_signIn_form_group input::placeholder{
+	color: #949494;
+	font-size: 14px;
+	font-weight: 400;
+	text-align: left;
+}
+.ar_signIn_form_group input[type="text"] {
+	background: url('../images/login/Smartphone.png');
+	background-repeat: no-repeat;
+	display: flex;
+	justify-content: flex-end;
+	background-position: 98% 38%;
+}
+.ar_signIn_form_group input[type="submit"]{
+	width: 100%;
+	border:none;
+	outline: none;
+	padding: 15px 15px;
+	background-color: #347AE2;
+	color: #FFFFFF;
+	font-size: 14px;
+	font-weight: 700;
+	border: transparent;
+}
+.ar_signIn_form_group{
+	margin-bottom: 20px;
+}
+.ar_signIn_form_group.span{
+	margin-bottom: 30px;
+}
+.ar_signIn_form_group span{
+	margin-top: 10px;
+}
+.ar_signIn_form_group.sbCenter span{
+	text-align: center;
+	color: #B8B8B8;
+}
+.ar_signIn_form_group.hover input[type="submit"]{
+	width: 100%;
+	border:none;
+	outline: none;
+	padding: 15px 15px;
+	background-color: transparent;
+	color: #347AE2;
+	font-size: 14px;
+	font-weight: 700;
+	border: 1px solid #EAEAEA;
+}
+.ar_signIn_form_group.hover input[type="submit"]:hover{
+	
+	background-color: #347AE2;
+	color: #fff;
+	border: 1px solid transparent;
+}
+.ar_registerLogin_area_sectionSpan.ar_singin_area_section {
+	padding-bottom: 240px;
+}
+
+/* otp css */
+.ar_signin_form_area > p {
+	color: #878787;
+	padding: 20px 45px;
+	text-align: center;
+	line-height: 30px;
+}
+.ar_otp_area {
+	text-align: center;
+}
+
+
+
+  .ar_otp_area form input {
+	display: inline-block;
+	width: 60px;
+	height: 60px;
+	text-align: center;
+	border: none;
+	background: #F6F6F6;
+	box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.12);
+	border-radius: 10px;
+	margin: 0px 5px;
+	font-weight: 700;
+	font-size: 14px;
+	color: #000;
+}
+.ar_otp_submit{
+	margin-top: 50px;
+}
+.ar_otp_submit input{
+	width: 100%;
+	border: none;
+	outline: none;
+	padding: 15px 15px;
+	background-color: #347AE2;
+	color: #FFFFFF;
+	font-size: 14px;
+	font-weight: 700;
+	border-radius: 10px;
+}
+.ar_otp_area p{
+	font-style: normal;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 37px;
+	text-align: center;
+	color: #B8B8B8;
+	padding-top: 15px;
+}
+/*
+===================================================================
+                    End Register Login CSS
+===================================================================
+*/

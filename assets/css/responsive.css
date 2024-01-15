@@ -5,6 +5,9 @@
     .ar_registerLogin_area_sectionSpan::before {
         top: 95%;
     }
+    .ar_singin_area_section::before {
+        top: 65%;
+    }
 }
 @media all and (max-width:1199px){
     .ar_registerLogin_area_sectionSpan::after {
@@ -15,6 +18,10 @@
         top: 100%;
         /* background-size: 100%; */
     }
+    .ar_singin_area_section::before {
+        top: 77%;
+    }
+    
 }
 
 

@@ -1,11 +1,19 @@
+@media all and (max-width:1499px){
+    .ar_registerLogin_area_sectionSpan {
+        padding: 200px 0px;
+    }
+    .ar_registerLogin_area_sectionSpan::before {
+        top: 95%;
+    }
+}
 @media all and (max-width:1199px){
     .ar_registerLogin_area_sectionSpan::after {
         width: 30%;
         right: 75%;
     }
     .ar_registerLogin_area_sectionSpan::before {
-        top: 80%;
-        background-size: 100%;
+        top: 100%;
+        /* background-size: 100%; */
     }
 }
 
@@ -68,6 +76,10 @@
     }
     .ar_registerLogin_area_sectionSpan.reg::before {
         top: 110%;
+    }
+    .ar_registerLogin_area_section {
+        background: url('../images/login/bac.png') no-repeat scroll 0 0 / cover;
+        
     }
 }
 

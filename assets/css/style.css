@@ -199,6 +199,7 @@ ul{
 	display: flex;
 	justify-content: flex-end;
 	background-position: 98% 38%;
+	text-align: left;
 }
 .ar_signIn_form_group input[type="submit"]{
 	width: 100%;

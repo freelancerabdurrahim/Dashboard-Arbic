@@ -6,6 +6,8 @@
 body{
 	margin: 0;
 	font-family: 'Cairo', sans-serif;
+
+	/* font-family: 'Poppins', sans-serif; */
 }
 h1,h2,h3,h4,h5,h6,p{
 	margin: 0;
@@ -102,6 +104,11 @@ ul{
 }
 .ar_login_area_content{
 	text-align: center;
+}
+.ar_login_area{
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 .ar_login_form_group button{
 	background-color: #fff;
@@ -203,6 +210,7 @@ ul{
 	font-size: 14px;
 	font-weight: 700;
 	border: transparent;
+	text-align: center;
 }
 .ar_signIn_form_group{
 	margin-bottom: 20px;
@@ -321,7 +329,7 @@ ul{
 }
 
 .navigation.active {
-  width: 300px;
+  width: 270px;
   /* border-radius: 20px; */
 }
 
@@ -455,6 +463,275 @@ ul{
   white-space: nowrap;
 }
 
+
+
+
+/* left-content */
+.ar_dashboard_main_area_wrapper{
+	display: flex;
+	justify-content: space-between;
+}
+.ar_dashboard_main_content_area{
+	flex: 0 0 85%;
+}
+.ar_dashboard_main_sidebar_area{
+	flex: 0 0 15%;
+}
+.ar_content_header_area{
+	padding: 20px 50px;
+	background-color: #F8FAFF;
+}
+
+/* ar_information-header */
+.ar_content_header_area{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.ar_info_header_search input {
+	background: #FFFFFF;
+	border: 1px solid #E6EDFF;
+	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.02);
+	border-radius: 12px;
+	font-weight: 300;
+	font-size: 11px;
+	line-height: 150%;
+	color: #989898;
+	max-width: 445px;
+	width: 100%;
+	padding: 13px 15px;
+	padding-left: 35px;
+	outline: none;
+}
+.ar_info_header_search input::placeholder{
+	font-family: 'Poppins', sans-serif;
+	color: #989898;
+	font-weight: 300;
+	font-size: 12px;
+	text-align: left;
+	padding-left: 100px;
+}
+.ar_info_header_search{
+	flex: 0 0 50%;
+	text-align: left;
+}
+.ar_info_header_search{
+	position: relative;
+}
+.ar_info_header_search a i {
+	position: absolute;
+	top: 17px;
+	left: 15px;
+	color: #000000;
+	font-size: 18px;
+}
+.ar_profile_user p {
+	display: inline-block;
+	color: #FFFFFF;
+	background-color: #FF5454;
+	padding: 2px 5px;
+	border-radius: 28px;
+	font-family: 'Poppins', sans-serif;
+	font-size: 10px;
+	/* margin-top: 35px; */
+	transform: translate(0px,-6px);
+}
+.ar_profile_user a{
+	display: block;
+	font-size: 16px;
+	color: #000000;
+	font-weight: 400;
+	font-family: 'Poppins', sans-serif;
+}
+.ar_profile_user a img{
+	width: 32px;
+	margin-right: 5px;
+}
+.ar_profile_user a i{
+	margin-left: 5px;
+	color: #7C8DB5;
+}
+
+/* title-area */
+.ar_content_title_area{
+	padding: 15px 50px;
+	border-bottom: 1px solid #E6EDFF;
+	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.02);
+}
+.ar_content_title_area h2{
+	color: #2267B4;
+	font-size: 28px;
+	font-weight: 700;
+}
+/* main-content */
+.ar_info_mainContent_area{
+	padding: 50px 50px;
+	background-color: #F8FAFF;
+}
+
+.ar_info_maincont_tab_area{
+	display: flex;
+	align-items: center;
+	justify-content:flex-start;
+}
+.ar_info_maincont_tab a {
+	color: #5F5F5F;
+	font-size: 18px;
+	font-weight: 400;
+	padding: 15px 20px;
+	background-color: #F4F4F4;
+	padding-left: 130px;
+	border: 1px solid #E6EDFF;
+	border-top: 5px solid transparent;
+}
+.ar_info_maincont_tab a:hover{
+	border-top: 5px solid #2267B4;
+	background-color: #E6EDFF;
+}
+.ar_info_maincont_tab a img{
+	width: 55px;
+	margin-left: 20px;
+}
+.ar_info_maincont_tab:last-child a{
+	border-radius: 10px 0px 0px 10px;
+}
+.ar_info_maincont_tab:first-child a{
+	border-radius: 0px 10px 10px 0px;
+}
+
+/* form-area */
+
+.ar_info_tab_form_wrapper h3{
+	color: #5F5F5F;
+	font-size: 24px;
+	font-weight: 600;
+	margin-top: 50px;
+}
+.ar_info_tab_form_area{
+	display: flex;
+	justify-content: space-between;
+	column-gap: 30px;
+	padding-top: 20px;
+}
+.ar_info_form_left,
+.ar_info_form_right{
+	padding: 20px;
+	border: 1px solid #E6EDFF;
+	border-radius: 10px;
+	flex: 0 0 49%;
+}
+
+.ar_info_form_group input,
+.ar_info_form_group textarea{
+	box-sizing: border-box;
+	border: 1px solid #EAEAEA;
+	border-radius: 10px;
+	width: 70%;
+	padding: 15px 15px;
+	background: transparent;
+}
+.ar_info_form_group input::placeholder,
+.ar_info_form_group textarea::placeholder{
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 150%;
+	text-align: right;
+	color: #949494;
+}
+.ar_info_form_group input:focus,
+.ar_info_form_group textarea:focus,
+.ar_info_form_group .form-select:focus{
+	outline: 1px solid #6184FF;
+	box-shadow: none;
+}
+.ar_info_form_group label {
+	color: #6184FF;
+	font-size: 16px;
+	font-weight: 700;
+	display: block;
+	transform: translate(-20px, 7px);
+}
+.ar_info_form_group span{
+	display: block;
+	color: #F80101;
+	font-size: 12px;
+	font-weight: 400;
+	padding-top: 5px;
+}
+.ar_info_form_group{
+	margin-bottom: 20px;
+}
+.ar_info_form_group.img input{
+	background: url('../images/formProfile.png');
+    background-repeat: repeat;
+	background-repeat: no-repeat;
+	display: flex;
+	justify-content: flex-end;
+	background-position: 98% 38%;
+	padding-right: 45px;
+}
+.ar_info_form_group.img.email input{
+	background: url('../images/formEmail.png');
+    background-repeat: repeat;
+	background-repeat: no-repeat;
+	display: flex;
+	justify-content: flex-end;
+	background-position: 98% 38%;
+	padding-right: 45px;
+}
+.ar_info_form_group.img.number input{
+	background: url('../images/login/Smartphone.png');
+    background-repeat: repeat;
+	background-repeat: no-repeat;
+	display: flex;
+	justify-content: flex-end;
+	background-position: 98% 38%;
+	padding-right: 45px;
+}
+.ar_info_form_group textarea{
+	box-sizing: border-box;
+	border: 1px solid #EAEAEA;
+	border-radius: 10px;
+	width: 70%;
+	padding: 10px 15px;
+	height: 120px;
+}
+.ar_info_form_group textarea::placeholder{
+	font-size: 20px;
+}
+.ar_info_form_group select{
+	box-sizing: border-box;
+	border: 1px solid #EAEAEA;
+	border-radius: 10px;
+	width: 70%;
+	padding: 15px 15px;
+	color: #949494;
+	/* background: transparent; */
+}
+.ar_info_form_group .form-select {
+	background-image: url('../images/downArrow.png');
+	background-repeat: no-repeat;
+	background-position: 3%;
+	background-color: #F8FAFF;
+}
+.ar_info_right_btn input {
+	width: 130px;
+	border-radius: 10px;
+	background-color: #347AE2;
+	border: none;
+	color: #fff;
+	font-weight: 700;
+	font-size: 18px;
+	padding: 15px 15px;
+	text-align: center;
+}
+.ar_info_right_btn{
+	text-align: left;
+	margin-left: 100px;
+	margin-top: 50px;
+}
 /*
 ===================================================================
                     End Dashboard Area CSS

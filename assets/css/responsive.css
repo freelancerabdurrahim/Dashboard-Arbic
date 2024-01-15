@@ -8,19 +8,38 @@
     .ar_singin_area_section::before {
         top: 65%;
     }
+    .ar_registerLogin_area_section{
+        height: auto;
+    }
+    
 }
+@media all and (max-width:1399px){
+    .ar_registerLogin_area_sectionSpan {
+        padding: 130px 0px;
+    }
+    .ar_registerLogin_area_sectionSpan::before {
+        top: 70%;
+    }
+    .ar_registerLogin_area_sectionSpan.ar_singin_area_section {
+        padding-bottom: 150px;
+    }
+}
+
+
+
 @media all and (max-width:1199px){
     .ar_registerLogin_area_sectionSpan::after {
         width: 30%;
         right: 75%;
     }
     .ar_registerLogin_area_sectionSpan::before {
-        top: 100%;
+        /* top: 100%; */
         /* background-size: 100%; */
     }
     .ar_singin_area_section::before {
         top: 77%;
     }
+    
     
 }
 
@@ -29,6 +48,9 @@
 @media all and (max-width:991px){
     .ar_registerLogin_area_section::before {
         width: 19%;
+    }
+    .ar_singin_area_section.ar_singin_area_section::before {
+        top: 85%;
     }
     
 }
@@ -56,7 +78,7 @@
         font-size: 16px;
     }
     .ar_registerLogin_area_sectionSpan {
-        padding: 210px 0px;
+        padding: 100px 0px;
     }
     .ar_registerLogin_area_sectionSpan::before {
         top: 70%;
@@ -65,7 +87,7 @@
         z-index: -1;
     }
     .ar_registerLogin_area_sectionSpan.reg::before {
-        top: 100%;
+        top: 80%;
     }
 }
 
@@ -79,16 +101,25 @@
         margin: 0px 15px;
     }
     .ar_signin_form_area h2 {
-        font-size: 28px;
+        font-size: 25px;
     }
     .ar_registerLogin_area_sectionSpan.reg::before {
-        top: 110%;
+        /* top: 110%; */
     }
     .ar_registerLogin_area_section {
         background: url('../images/login/bac.png') no-repeat scroll 0 0 / cover;
         
     }
+    .ar_login_logo a img {
+        width: 290px;
+    }
+    .ar_signin_form_area > p {
+        font-size: 16px;
+    }
 }
+
+
+
 
 @media all and (max-width:450px){
     .ar_registerLogin_area_sectionSpan::after {
@@ -113,7 +144,10 @@
         top: 82%;
     }
     .ar_registerLogin_area_sectionSpan.reg::before {
-        top: 115%;
+        top: 85%;
+    }
+    .ar_singin_area_section.ar_singin_area_section::before {
+        top: 92%;
     }
 }
  

@@ -337,14 +337,12 @@ ul{
 }
 
 .toggle {
-  position: absolute;
-  right: 15px;
+  position: absolute; 
   bottom: 15px;
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background: #fff;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+  background: #fff; 
   cursor: pointer;
   display: flex;
   justify-content: center;
@@ -392,17 +390,37 @@ ul{
   position: relative;
   list-style: none;
   width: 100%;
-  border-top-right-radius: 30px;
-  border-bottom-right-radius: 30px;
   margin-bottom: 5px;
 }
 
-.navigation ul li:hover, 
-.navigation ul li.active {
+.navigation ul li a:hover, 
+.navigation ul li a.active {
   background: #fff;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
   color: #222;
 }
 
+.sk_dropdown {
+	border: none !important;
+	margin-top: 0 !important;
+	padding-top: 0 !important;
+	padding-right: 55px !important; 
+}
+
+.sk_drop_img {
+	position: absolute;
+	top: 56px;
+	right: 30px;
+}
+
+.sk_dropdown li a:hover { 
+	background-color: transparent !important;
+	color: #222 !important; 
+}
+.sk_dropdown li a { 
+	line-height: 35px !important;
+}
 
 
 /* .navigation ul li:hover::after {
@@ -442,7 +460,7 @@ ul{
 }
 
 .navigation ul li:hover a {
-  color: #365fa1;
+  /* color: #365fa1; */
 }
 
 .navigation ul li a .icon {
@@ -483,8 +501,7 @@ ul{
 	justify-content: center;
 	margin-top: 60px;
 }
-.toggle {
-	right: 85%;
+.toggle { 
 	left: 0;
 	top: 100px;
 	z-index: 99999999;
@@ -509,6 +526,12 @@ ul{
 	display: flex;
 	align-items: center;
 }
+
+.navigation ul li.active a {
+	
+	color: #000;
+}
+
 .navigation ul  li a .icon i{
 	font-size: 20px;
 }

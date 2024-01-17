@@ -8,6 +8,9 @@
     .ar_single_left{
         flex: 0 0 50%;
     }
+    .navigation.active {
+        overflow-y: scroll;
+    }
 }
 @media all and (max-width:1499px){
     .ar_registerLogin_area_sectionSpan {

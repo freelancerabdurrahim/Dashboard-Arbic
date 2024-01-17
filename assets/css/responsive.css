@@ -10,6 +10,7 @@
     }
     .navigation.active {
         overflow-y: scroll;
+        scrollbar-width: none;
     }
 }
 @media all and (max-width:1499px){

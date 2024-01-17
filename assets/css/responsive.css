@@ -12,6 +12,9 @@
         overflow-y: scroll;
         scrollbar-width: none;
     }
+    .ar_registerLogin_area_sectionSpan.extralogin {
+        padding-top: 100px;
+    }
 }
 @media all and (max-width:1499px){
     .ar_registerLogin_area_sectionSpan {
@@ -34,6 +37,13 @@
     }
     .ar_info_maincont_tab a {
         padding-left: 100px;
+    }
+    .extralogin{
+        padding: 190px 0px;
+        padding-bottom: 340px;
+    }
+    .ar_registerLogin_area_sectionSpan.extralogin::before {
+        top: 70%;
     }
     
 }
@@ -68,6 +78,9 @@
     }
     .ar_infow_tow_span {
         width: 80%;
+    }
+    .extralogin{
+        padding-bottom: 290px;
     }
 }
 
@@ -195,6 +208,10 @@
     .ar_infow_tow_span {
         width: 100%;
     }
+    .ar_registerLogin_area_sectionSpan.extralogin::before {
+        top: 80%;
+    }
+    
     
 }
 
@@ -296,6 +313,9 @@
     .ar_qualifiction_fileUpload {
         width: 100%;
     }
+    .extralogin{
+        padding-bottom: 225px;
+    }
 
 
 
@@ -335,6 +355,9 @@
     }
     .ar_info_maincont_tab a {
         padding: 0px 32px;
+    }
+    .extralogin {
+        padding-bottom: 250px;
     }
 }
 

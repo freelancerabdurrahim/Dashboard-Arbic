@@ -1,4 +1,14 @@
 $(document).ready(function(){
+
+
+    $(".ar_moblie_bars").click(function(){
+        $(".ar_mobile_navbar_area").toggleClass("active");
+      });
+      $(".ar_moNav_minus").click(function(){
+        $(".ar_mobile_navbar_area").toggleClass("active");
+      });
+
+
     // sidebarNabMenu
     let navigation = document.querySelector('.navigation');
         let toggle = document.querySelector('.toggle');

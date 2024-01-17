@@ -1,3 +1,14 @@
+@media all and (max-width:1700px){
+    .navigation.active {
+        width: 18%;
+    }
+    .ar_dashboard_main_content_area {
+        padding-right: 14px;
+    }
+    .ar_single_left{
+        flex: 0 0 50%;
+    }
+}
 @media all and (max-width:1499px){
     .ar_registerLogin_area_sectionSpan {
         padding: 200px 0px;
@@ -10,6 +21,15 @@
     }
     .ar_registerLogin_area_section{
         height: auto;
+    }
+    .navigation ul li a {
+        font-size: 14px;
+    }
+    .sk_dropdown li a{
+        font-size: 12px !important;
+    }
+    .ar_info_maincont_tab a {
+        padding-left: 100px;
     }
     
 }
@@ -25,6 +45,25 @@
     }
     .ar_login_area_content.regIn {
         padding-bottom: 50px;
+    }
+    .ar_info_maincont_tab a {
+        padding-left: 50px;
+    }
+
+    .ar_info_form_left, .ar_info_form_right {
+        flex: 0 0 45%;
+    }
+    .sk_drop_img {
+        right: 20px;
+    }
+    .sk_dropdown {
+        padding-right: 40px !important;
+    }
+    .ar_single_left{
+        flex: 0 0 70%;
+    }
+    .ar_infow_tow_span {
+        width: 80%;
     }
 }
 
@@ -42,10 +81,80 @@
     .ar_singin_area_section::before {
         top: 77%;
     }
+    .ar_info_maincont_tab a {
+        padding-left: 10px;
+    }
+    .navigation ul li a .title {
+        padding: 0px;
+        padding-left: 5px;
+        margin-right: -13px;
+    }
     
     
 }
+@media all and (max-width:1024px){
+    .ar_dashboard_main_sidebar_area {
+        display: none;
+    }
+    .ar_dashboard_main_content_area {
+        flex: 0 0 100% ;
+        padding-right: 0px;
+    }
+    .desktop_header{
+        display: none;
+    }
+    .ar_mobile_header_area{
+        display: block;
+    }
+    .ar_barsLogo{
+        display: flex;
+        align-items: center;
+    }
+    .ar_mobile_header_area{
+        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #2267B4;
+        padding: 15px 30px;
+    }
+    .ar_moblie_Logo {
+        margin-right: 10px;
+    }
+    .ar_moblie_bars a img,
+    .ar_moblie_logo a img,
+    .ar_moblie_profile a img{
+        width: 35px;
+    }
 
+    .ar_dashboard_main_area_wrapper{
+        position: relative;
+    }
+    .ar_mobile_navbar_area {
+        display: block;
+        position: absolute;
+        /* left: 0; */
+        top: -50px;
+        right: -100%;
+        z-index: 999;
+        transition: .5s;
+    }
+    .active{
+        right: 0;
+        transition: .5s;
+    }
+
+
+
+
+
+
+
+
+
+
+
+}
 
 
 @media all and (max-width:991px){
@@ -54,6 +163,33 @@
     }
     .ar_singin_area_section.ar_singin_area_section::before {
         top: 85%;
+    }
+
+    .ar_info_maincont_tab a {
+        padding: 15px 5px;
+        padding-left: 15px;
+        font-size: 16px;
+    }
+    .ar_info_maincont_tab a img {
+        width: 45px;
+        margin-left: 10px;
+    }
+
+    .ar_info_tab_form_area {
+        flex-direction: column;
+    }
+    .ar_info_form_group textarea {
+        width: 100%;
+    }
+    .ar_info_form_group select {
+        width: 100%;
+    }
+    .ar_info_form_group input,
+    .ar_info_form_group textarea {
+        width: 100%;
+    }
+    .ar_infow_tow_span {
+        width: 100%;
     }
     
 }
@@ -95,6 +231,71 @@
     .ar_login_area_content.regIn {
         padding-bottom: 150px;
     }
+
+    .ar_info_maincont_tab_area .nav {
+        flex-wrap: inherit;
+    }
+    .ar_info_maincont_tab a img {
+        width: 40px;
+        margin-left: 0px;
+        display: block;
+        margin: auto;
+    }
+    .ar_info_maincont_tab a {
+        font-size: 14px;
+        display: inline-block;
+        padding: 0px 45px;
+    }
+    .ar_info_form_group input,
+    .ar_info_form_group textarea {
+        width: 100%;
+    }
+    .ar_info_tab_form_wrapper h3 {
+        font-size: 20px;
+    }
+    .ar_content_title_area h2 {
+        font-size: 22px;
+    }
+    .ar_info_right_btn input {
+        width: 100px;
+        font-size: 16px;
+        padding: 10px 10px;
+    }
+    .ar_info_form_group label {
+        font-size: 14px;
+    }
+    .ar_info_form_group select {
+        width: 100%;
+    }
+    .ar_qualification_files_upload_area > p {
+        font-size: 16px;
+    }
+    .panel {
+        margin: 10px auto 10px;
+    }
+    .ar_qualification_files_upload_area span {
+        font-size: 14px;
+    }
+    .ar_cont_mint p {
+        font-size: 12px;
+    }
+    .ar_img_right a img{
+        width: 20px;
+    }
+    .ar_delete_left a img{
+        width: 20px;
+    }
+    .ar_qualificton_deletWright_area {
+        padding: 10px 10px;
+        width: 100%;
+    }
+    .ar_qualifiction_fileUpload {
+        width: 100%;
+    }
+
+
+
+
 }
 
 
@@ -124,6 +325,12 @@
     }
     .ar_registerLogin_area_sectionSpan::after {
         width: 57%;
+    }
+    .ar_info_mainContent_area {
+        padding: 50px 15px;
+    }
+    .ar_info_maincont_tab a {
+        padding: 0px 32px;
     }
 }
 
@@ -158,5 +365,24 @@
     .ar_singin_area_section.ar_singin_area_section::before {
         top: 92%;
     }
+    .ar_img_right a img {
+        width: 15px;
+    }
+    .ar_cont_mint p {
+        font-size: 10px;
+    }
+    .ar_delete_left a img {
+        width: 13px;
+    }
+    .ar_info_maincont_tab a {
+        padding: 0px 20px;
+    }
 }
- 
+@media all and (max-width:340px){
+    .ar_moblie_profile {
+        /* margin-left: 20px; */
+    }
+    .ar_info_maincont_tab a {
+        padding: 0px 15px;
+    }
+}

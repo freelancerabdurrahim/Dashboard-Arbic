@@ -9,7 +9,7 @@
     <meta property="og:url" content="">
     <meta property="og:image" content="">
 
-    <title>Splash </title>
+    <title>Personal Information </title>
     <link rel="icon" href="assets/images/favicon.png">
 
     <!-- CSS Files-->
@@ -22,14 +22,17 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <!-- fontawesome css -->
     <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
     <!-- google-fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;900&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">  
     <!-- main css -->
     <link rel="stylesheet" href="assets/css/style.css">
     <!-- responsive css -->
     <link rel="stylesheet" href="assets/css/responsive.css">
   </head>
-  <body dir="rtl">
+  <body  dir="rtl">
     
     <!--
     ===================================================================
@@ -37,24 +40,425 @@
     ===================================================================
     -->
 
-    <section class="ar_registerLogin_area_section span">
-      <div class="ar_registerLogin_area_sectionSpan reg">
-        <div class="ar_login_area">
-          <div class="ar_login_area_content regIn">
-            <div class="ar_login_logo">
-              <a href="#"><img src="assets/images/login/logo.png" alt="logo"></a>
-            </div>
-            <div class="ar_login_form">
-              <form action="">
-                <div class="ar_login_form_group">
-                  <button>تسجيل دخول</button>
-                  <button>سجل الآن</button>
+    <section class="ar_dashboard_main_area_wrapper">
+        
+        <!-- sidebar -->
+        <div class="ar_dashboard_main_sidebar_area">
+
+            <!-- <div class="container"> -->
+                <div class="navigation active">
+                  <div class="ar_navigation_logo">
+                    <a href="#"><img src="assets/images/sidelogo.png" alt=""></a>
+                  </div>
+                  <div class="toggle sidebar_arrow"></div>
+                  <ul>
+                    <li >
+                      <a class="active"  href="#">
+                        <span class="icon">
+                            <img src="assets/images/nav/nav1.png" alt="">
+                        </span>
+                        <span class="title">My account</span>
+                      </a>
+                      <div class="sk_main_drp">
+                        <ul class="sk_dropdown">
+                          <li><a href="#">Personal Info</a></li>
+                          <li><a href="#">Academic Qualifications</a></li>
+                          <li><a href="#">Work Qualifications</a></li>
+                        </ul> 
+                        <div class="sk_drop_img">
+                          <img src="assets/images/drop.png" alt="">
+                        </div>
+                      </div>
+                      
+                    </li>  
+                    <li>
+                      <a href="#">
+                        <span class="icon">
+                         <img src="assets/images/nav/nav2.png" alt="">
+                        </span>
+                        <span class="title">Main menu</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <span class="icon">
+                        <img src="assets/images/nav/nav3.png" alt="">
+                        </span>
+                        <span class="title">Received order</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <span class="icon">
+                          <img src="assets/images/nav/nav4.png" alt="">
+                        </span>
+                        <span class="title">Available order</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <span class="icon">
+                         <img src="assets/images/nav/nav5.png" alt="">
+                        </span>
+                        <span class="title">Wallet</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <span class="icon">
+                          <img src="assets/images/nav/nav4.png" alt="">
+                        </span>
+                        <span class="title">Client's Review</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <span class="icon">
+                         <img src="assets/images/nav/nav6.png" alt="">
+                        </span>
+                        <span class="title">Admin Review</span>
+                      </a>
+                    </li>
+                    
+                  </ul>
+
+                  <div class="ar_sidebar_logout">
+                    <a href="#">Logout <i class="fas fa-sign-out-alt"></i> </a>
+                  </div>
+                  
                 </div>
-              </form>
-            </div>
+              <!-- </div> -->
+        </div>
+
+
+
+        <!-- mobile-navbar -->
+        <div class="ar_mobile_navbar_area">
+          <div class="ar_moNav_minus">
+            <a href="#"><img src="assets/images/nav/mMinus.png" alt=""></a>
+          </div>
+          <ul>
+            <li >
+              <a class="active"  href="#">
+                <span class="icon">
+                    <img src="assets/images/nav/navM2.svg" alt="">
+                </span>
+                <span class="title">My account</span>
+              </a>
+              <!-- <div class="sk_main_drp ar_drop_area">
+                <ul class="sk_dropdown">
+                  <li><a href="#">Personal Info</a></li>
+                  <li><a href="#">Academic Qualifications</a></li>
+                  <li><a href="#">Work Qualifications</a></li>
+                </ul> 
+                <div class="sk_drop_img ar_drop_areaAfter">
+                  <img src="assets/images/nav/dropM.svg" alt="">
+                </div>
+              </div> -->
+              
+            </li>  
+            <li>
+              <a href="#">
+                <span class="icon">
+                 <img src="assets/images/nav/navM6.svg" alt="">
+                </span>
+                <span class="title">Main menu</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="icon">
+                <img src="assets/images/nav/navM5.svg" alt="">
+                </span>
+                <span class="title">Received order</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="icon">
+                  <img src="assets/images/nav/navM4.svg" alt="">
+                </span>
+                <span class="title">Available order</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="icon">
+                 <img src="assets/images/nav/navM7.svg" alt="">
+                </span>
+                <span class="title">Wallet</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="icon">
+                  <img src="assets/images/nav/navM4.svg" alt="">
+                </span>
+                <span class="title">Client's Review</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="icon">
+                 <img src="assets/images/nav/navM1.svg" alt="">
+                </span>
+                <span class="title">Admin Review</span>
+              </a>
+            </li>
+            
+          </ul>
+
+          <div class="ar_sidebar_logout_moblie">
+            <a href="#">Logout <i class="fas fa-sign-out-alt"></i> </a>
           </div>
         </div>
+
+        
+
+        <!-- right-content -->
+        <div class="ar_dashboard_main_content_area">
+          <div class="tttt">
+          <!-- heading-area -->
+          <div class="ar_content_header_area desktop_header">
+            <div class="ar_info_profile_area">
+              <div class="ar_profile_user">
+                <a href="#"><i class="fas fa-chevron-down"></i> Aman Ali <img src="assets/images/avatar.png" alt=""></a>
+                <p>Active</p>
+              </div>
+            </div>
+            <div class="ar_info_header_search">
+              <a href="#"><i class="fas fa-search"></i></a>
+              <input type="search" name="search" id="search" placeholder="..Search">
+            </div>
+          </div>
+
+          <!-- mobile-header -->
+          <div class="ar_mobile_header_area">
+            <div class="ar_barsLogo">
+              <div class="ar_moblie_bars">
+                <a href="#"><img src="assets/images/bars.png" alt=""></a>
+              </div>
+              <div class="ar_moblie_Logo">
+                <a href="#"><img src="assets/images/mlogo.png" alt=""></a>
+              </div>
+            </div>
+            <div class="ar_moblie_profile">
+              <a href="#"><img src="assets/images/avatar.png" alt=""></a>
+            </div>
+          </div>
+          <!-- title-area -->
+          <div class="ar_content_title_area">
+            <h2>حسابي</h2>
+          </div>
+
+          <div class="ar_info_mainContent_area">
+            <!-- tab-area -->
+            <div class="ar_info_maincont_tab_area">
+
+              <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">
+                    <div class="ar_info_maincont_tab">
+                      <a href="#"><img src="assets/images/tab1.png" alt=""> المعلومات الشخصية </a>
+                    </div>
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">
+                    <div class="ar_info_maincont_tab">
+                      <a href="#"><img src="assets/images/tab2.png" alt=""> المؤهلات الدراسية  </a>
+                    </div>
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">
+                    <div class="ar_info_maincont_tab">
+                      <a href="#"><img src="assets/images/tab2.png" alt=""> المؤهلات العملية </a>
+                    </div>
+                  </button>
+                </li>
+              </ul>
+              
+            </div>
+
+            <div class="tab-content" id="myTabContent">
+              <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                
+                <!-- form-area -->
+                <div class="ar_info_tab_form_wrapper">
+                  <h3>المعلومات الشخصية</h3>
+                  <div class="ar_info_tab_form_area">
+                    <div class="ar_info_form_left">
+                      <form action="">
+                        <div class="ar_info_form_group img">
+                          <label for="name">الأسم</label>
+                          <input type="text" name="name" id="name" placeholder="Aman Ali">
+                          <span>الرجاء ادخال الأسم</span>
+                        </div>
+                        <div class="ar_info_form_group img email">
+                          <label for="email">البريد الإلكتروني</label>
+                          <input type="email" name="email" id="email" placeholder="example.ex.com">
+                          <span> الرجاء ادخال البريد الإلكتروني</span>
+                        </div>
+                        <div class="ar_info_form_group img number">
+                          <label for="number">رقم الهاتف</label>
+                          <input type="text" name="number" id="number" placeholder=" 555555 | 966+">
+                          <span>الرجاء ادخال رقم الهاتف </span>
+                        </div>
+                      </form>
+                    </div>
+                    <div class="ar_info_form_right">
+                      <form action="">
+                        <div class="ar_info_form_group">
+                          <label for="namel">رقم الايبان</label>
+                          <input type="text" name="namel" id="namel" placeholder="55555555">
+                          <span>الرجاء ادخال الأسم</span>
+                        </div>
+                        <div class="ar_info_form_group">
+
+                          <label for="email">البريد الإلكتروني</label>
+                          <select class="form-select" aria-label="Default select example">
+                            <option selected>الرياض</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                          <!-- <input type="email" name="email" id="email" placeholder="الرياض"> -->
+                          <span> الرجاء ادخال البريد الإلكتروني</span>
+                        </div>
+                        <div class="ar_info_form_group">
+                          <label for="textar">ملاحظة للمشرف </label>
+                          <textarea name="textar" id="textar" placeholder="اكتب النص هنا......">  </textarea>
+                        </div>
+
+                        <div class="ar_info_right_btn">
+                          <input type="submit" value="حفظ">
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                 </div>
+
+              </div>
+              <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+
+                  <!-- form-area -->
+                  <div class="ar_info_tab_form_wrapper">
+                    <h3>المؤهلات العملية </h3>
+                    <div class="ar_info_tab_form_area">
+                      <div class="ar_info_form_left ar_single_left">
+                        <form action="">
+                          <div class="ar_info_form_group img">
+                            <label for="name">جهة العمل الحالية</label>
+                            <input type="text" name="name" id="name" placeholder="Aman Ali">
+                            <div class="ar_infow_tow_span arQualific">
+                              <span> الرجاء إدخال جهة العمل الحالية </span>
+                            </div>
+                          </div>
+                          <div class="ar_info_form_group img email quali">
+                            <label for="text">سنوات الخبرة</label>
+                            <input type="text" name="text" id="text" placeholder="4">
+                            <div class="ar_infow_tow_span arQualific">
+                              <span>الرجاء إدخال سنوات الخبرة</span>
+                            </div>
+                          </div>
+                          <div class="ar_info_form_group img number quali">
+                            <label for="number"> رقم شهادة المعهد العقاري</label>
+                            <input type="text" name="number" id="number" placeholder="2375">
+                            <div class="ar_infow_tow_span arQualific">
+                              <span>الرجاء إدخال رقم شهادة المعهد العقاري</span>
+                            </div>
+                          </div>
+
+                          <div class="ar_info_right_btn">
+                              <input type="submit" value="حفظ">
+                            </div>
+                        </form>
+                      </div>
+                      
+                    </div>
+                  </div>
+
+              </div>
+              <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+
+
+                <!-- form-area -->
+                <div class="ar_info_tab_form_wrapper">
+                  <h3>المؤهلات العملية </h3>
+                  <div class="ar_info_tab_form_area">
+                    <div class="ar_info_form_left ar_single_left">
+                      <form action="">
+                        <div class="ar_info_form_group img">
+                          <label for="name">اسم الجامعة</label>
+                          <input type="text" name="name" id="name" placeholder="Aman Ali">
+                          <div class="ar_infow_tow_span">
+                            <span> الرجاء إدخال اسم الجامعة      </span>
+                            <span>0/20</span>
+                          </div>
+                        </div>
+                        <div class="ar_info_form_group img number quali">
+                          <label for="number"> التخصص</label>
+                          <input type="text" name="number" id="number">
+                          <div class="ar_infow_tow_span">
+                            <span> الرجاء إدخال التخصص    </span>
+                          </div>
+                        </div>
+
+                        <div class="ar_qualification_files_upload_area">
+                          <p> يرجى ارفاق جميع الشهادات الجامعية وشهادات الخبرة ان وجدت</p>
+                          <div class="ar_qualifiction_fileUpload">
+                            <div class="panel">
+                              <div class="button_outer">
+                                <div class="btn_upload">
+                                  <input type="file" id="upload_file" name="">
+                                  <img src="assets/images/Upload.png" alt="">
+                                  <p>ارفاق ملف</p>
+                                </div>
+                                <div class="processing_bar"></div>
+                                <div class="success_box"></div>
+                              </div>
+                            </div>
+                            <div class="error_msg"></div>
+                            <div class="uploaded_file_view" id="uploaded_view">
+                              <span class="file_remove">X</span>
+                            </div>
+                          </div>
+                          <span>الملفات المدعومة: PDF, JPGE, PNG</span>
+                        </div>
+
+                        <div class="ar_qualificton_deletWright_area">
+                          
+                          <div class="ar_img_right">
+                            <a href="#"><img src="assets/images/bm.png" alt=""></a>
+                          </div>
+                          <div class="ar_cont_mint">
+                            <p>Document jpg- uploading</p>
+                          </div>
+                          <div class="ar_delete_left">
+                            <a href="#"><img src="assets/images/br.png" alt=""></a>
+                            <a href="#"><img src="assets/images/bd.png" alt=""></a>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                    
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            
+          </div>
+          </div>
       </div>
+
+
+
+
+      
+
     </section>
 
 
@@ -66,8 +470,32 @@
     -->
 
 
-
-
+    <script>
+      var btnUpload = $("#upload_file"),
+        btnOuter = $(".button_outer");
+      btnUpload.on("change", function(e){
+        var ext = btnUpload.val().split('.').pop().toLowerCase();
+        if($.inArray(ext, ['gif','png','jpg','jpeg']) == -1) {
+          $(".error_msg").text("Not an Image...");
+        } else {
+          $(".error_msg").text("");
+          btnOuter.addClass("file_uploading");
+          setTimeout(function(){
+            btnOuter.addClass("file_uploaded");
+          },3000);
+          var uploadedFile = URL.createObjectURL(e.target.files[0]);
+          setTimeout(function(){
+            $("#uploaded_view").append('<img src="'+uploadedFile+'" />').addClass("show");
+          },3500);
+        }
+      });
+      $(".file_remove").on("click", function(e){
+        $("#uploaded_view").removeClass("show");
+        $("#uploaded_view").find("img").remove();
+        btnOuter.removeClass("file_uploading");
+        btnOuter.removeClass("file_uploaded");
+      });
+  </script>
 
 
     <!-- JS Files -->
@@ -75,6 +503,7 @@
     <script src="assets/js/modernizr-3.11.2.min"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
     <script src="assets/js/scripts.js"></script>
   </body>
 </html>

@@ -167,6 +167,20 @@ ul{
 .ar_signIn_form{
 	margin-top: 30px;
 }
+.ar_signIn_form_group.code{
+	position: relative;
+}
+.ar_signIn_form_group p {
+	color: #949494;
+	font-size: 14px;
+	font-weight: 400;
+	position: absolute;
+	top: 33px;
+	left: 10px;
+}
+.ar_signIn_form_group p span{
+	position: relative;
+}
 .ar_signIn_form_group label {
 	color: #000000;
 	font-weight: 700;
@@ -188,6 +202,9 @@ ul{
 	border-radius: 10px;
 	text-align: right;
 	padding-right: 35px;
+}
+.ar_signIn_form_group.code input{
+	padding-left: 70px;
 }
 .ar_signIn_form_group input::placeholder{
 	color: #949494;
@@ -536,7 +553,7 @@ ul{
 	font-size: 20px;
 }
 .ar_sidebar_logout{
-	margin-top: 150px;
+	margin-top: 90px;
 	text-align: center;
 }
 
@@ -554,12 +571,77 @@ ul{
 
 }
 
+.ar_mobile_header_area{
+	display: none;
+}
 
+/* mobile-navbar */
 
+.ar_mobile_navbar_area{
+	width: 245px;
+	background: #fff;
+	margin: auto;
+	margin-top: 50px;
+	padding: 20px;
+	height: 100vh;
+	padding-top: 50px;
+	box-shadow: 0px 0px 20px #ddd;
+}
+.ar_mobile_navbar_area ul li a{
+	display: inline-block;
+	font-family: 'Poppins', sans-serif; 
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 21px;
+	text-align: right;
+	color: #515151;
+	padding: 10px 15px;
+	margin-bottom: 15px;
+	border-radius: 10px;
+}
+.ar_moNav_minus a img{
+	width: 50px;
+}
+.ar_moNav_minus a img {
+	width: 50px;
+	margin-bottom: 30px;
+	margin-right: -10px;
+}
 
+.ar_mobile_navbar_area ul li a span img{
+	margin-left: 15px;
+	color: red;
+}
+.ar_mobile_navbar_area ul li a:hover,
+.ar_mobile_navbar_area ul li a.active{
+	background-color: #3682D7;
+	color: #fff;
+}
 
-
-
+.ar_sidebar_logout_moblie a {
+	background: #FFFFFF;
+	box-shadow: 0px 0px 20px #ddd;
+	border-radius: 10.7878px;
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 13.8701px;
+	line-height: 21px;
+	color: #2267B4;
+	padding: 12px 20px;
+	width: 115px;
+	height: 47px;
+	margin: auto;
+}
+.ar_sidebar_logout_moblie{
+	text-align: center;
+	padding-top: 100px;
+	margin-bottom: 25px;
+}
+.ar_mobile_navbar_area{
+	display: none;
+}
 
 
 

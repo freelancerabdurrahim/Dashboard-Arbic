@@ -1384,6 +1384,9 @@ ul{
 ===================================================================
 */
 
+
+
+/* Extra fix */
 .sk_main_drp {
 	display: none;
 }
@@ -1413,4 +1416,66 @@ ul{
 }
 .ar_info_form_group.codeIn input{
 	padding-left: 65px;
+}
+.drop{
+	margin: 100px 0px;
+}
+.ar_profile_dropdown{
+	max-width: 220px;
+	width: 100%;
+	background-color: #fff;
+	padding: 5px 15px;
+	border-radius: 5px;
+	box-shadow: 0px 0px 10px #ddd;
+	/* margin: auto; */
+}
+.ar_pd_single_item a{
+	display: block;
+	color: #262525;
+	font-family: 'Poppins', sans-serif;
+	font-size: 18px;
+	font-weight: 500;
+	padding: 15px 0px;
+	border-bottom: 1px solid #26252563;
+}
+.ar_pd_single_item a i{
+	margin-left: 25px;
+}
+.ar_pd_single_item a:last-child{
+	border-bottom: none;
+}
+.ar_info_profile_area{
+	position: relative;
+}
+.ar_profile_dropdown {
+	position: absolute;
+	top: 55px;
+	/* left: -120px; */
+	visibility: hidden;
+	left: 0;
+	right: 0;
+	width: 200px;
+}
+.ar_profile_user.active +.ar_profile_dropdown{
+	visibility: visible;
+}
+.ar_moblie_profile{
+	position: relative;
+}
+.mobile_profile {
+	position: absolute;
+	top: 55px;
+	/* left: -120px; */
+	visibility: hidden;
+	left: 0;
+	right: 0;
+	width: 200px;
+}
+.ar_profile_user_moble.active +.mobile_profile{
+	visibility: visible;
+}
+.ar_profile_dropdown.mobile_profile {
+	left: 25px;
+	right: -150px;
+	top: 40px;
 }

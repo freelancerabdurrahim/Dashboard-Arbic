@@ -1,12 +1,38 @@
 $(document).ready(function(){
 
-
+    // mobile-navbar
     $(".ar_moblie_bars").click(function(){
         $(".ar_mobile_navbar_area").toggleClass("active");
       });
       $(".ar_moNav_minus").click(function(){
         $(".ar_mobile_navbar_area").toggleClass("active");
       });
+
+
+    //   profile-dropdown
+    $(".ar_profile_user").click(function(){
+        $(this).toggleClass("active");
+    })
+
+    $(document).click(function(){
+        $(".ar_profile_user").removeClass('active'); 
+    });
+
+    $(".ar_profile_dropdown, .ar_profile_user").click(function(e){
+            e.stopPropagation(); 
+    });
+
+    $(".ar_profile_user_moble").click(function(){
+        $(this).toggleClass("active");
+    })
+
+    $(document).click(function(){
+        $(".ar_profile_user_moble").removeClass('active'); 
+    });
+
+    $(".mobile_profile, .ar_profile_user_moble").click(function(e){
+            e.stopPropagation(); 
+    });
 
 
     // sidebarNabMenu

@@ -167,17 +167,7 @@ ul{
 .ar_signIn_form{
 	margin-top: 30px;
 }
-.ar_signIn_form_group.code{
-	position: relative;
-}
-.ar_signIn_form_group p {
-	color: #949494;
-	font-size: 14px;
-	font-weight: 400;
-	position: absolute;
-	top: 33px;
-	left: 10px;
-}
+
 .ar_signIn_form_group p span{
 	position: relative;
 }
@@ -264,6 +254,29 @@ ul{
 }
 .ar_registerLogin_area_sectionSpan.ar_singin_area_section {
 	padding-bottom: 240px;
+}
+
+.ar_signIn_form_group.code{
+	position: relative;
+}
+.ar_signIn_form_group p span {
+	color: #949494;
+	font-size: 14px;
+	font-weight: 400;
+	position: absolute;
+	top: 33px;
+	left: 10px;
+	margin-top: 0px;
+	/* position: relative; */
+}
+.ar_signIn_form_group.code::after {
+	content: "";
+	position: absolute;
+	background: #949494;
+	width: 1px;
+	height: 20px;
+	top: 34px;
+	left: 55px;
 }
 
 /* otp css */

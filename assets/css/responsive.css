@@ -316,6 +316,16 @@
     .extralogin{
         padding-bottom: 225px;
     }
+    .uploaded_file_view {
+        display: none;
+    }
+    .panel {
+        padding: 20px 0px 15px 0px;
+    }
+    .ar_pd_single_item a {
+        font-size: 16px;
+        padding: 13px 0px;
+    }
 
 
 

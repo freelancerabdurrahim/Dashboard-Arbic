@@ -17,6 +17,10 @@
     .ar_registerLogin_area_sectionSpan.extralogin {
         padding-top: 100px;
     }
+    .ar_info_form_left, 
+    .ar_info_form_right {
+        flex: 0 0 36%;
+    }
 }
 @media all and (max-width:1499px){
     .ar_registerLogin_area_sectionSpan {
@@ -46,6 +50,10 @@
     }
     .ar_registerLogin_area_sectionSpan.extralogin:before {
         top: 70%;
+    }
+    .ar_info_form_left, 
+    .ar_info_form_right {
+        flex: 0 0 40%;
     }
     
 }

@@ -6,7 +6,9 @@
         padding-right: 14px;
     }
     .ar_single_left{
-        flex: 0 0 50%;
+        -webkit-box-flex: 0;
+            -ms-flex: 0 0 50%;
+                flex: 0 0 50%;
     }
     .navigation.active {
         overflow-y: scroll;
@@ -20,10 +22,10 @@
     .ar_registerLogin_area_sectionSpan {
         padding: 200px 0px;
     }
-    .ar_registerLogin_area_sectionSpan::before {
+    .ar_registerLogin_area_sectionSpan:before {
         top: 95%;
     }
-    .ar_singin_area_section::before {
+    .ar_singin_area_section:before {
         top: 65%;
     }
     .ar_registerLogin_area_section{
@@ -42,7 +44,7 @@
         padding: 190px 0px;
         padding-bottom: 340px;
     }
-    .ar_registerLogin_area_sectionSpan.extralogin::before {
+    .ar_registerLogin_area_sectionSpan.extralogin:before {
         top: 70%;
     }
     
@@ -51,7 +53,7 @@
     .ar_registerLogin_area_sectionSpan {
         padding: 130px 0px;
     }
-    .ar_registerLogin_area_sectionSpan::before {
+    .ar_registerLogin_area_sectionSpan:before {
         top: 70%;
     }
     .ar_registerLogin_area_sectionSpan.ar_singin_area_section {
@@ -65,7 +67,9 @@
     }
 
     .ar_info_form_left, .ar_info_form_right {
-        flex: 0 0 45%;
+        -webkit-box-flex: 0;
+            -ms-flex: 0 0 45%;
+                flex: 0 0 45%;
     }
     .sk_drop_img {
         right: 20px;
@@ -74,7 +78,9 @@
         padding-right: 40px !important;
     }
     .ar_single_left{
-        flex: 0 0 70%;
+        -webkit-box-flex: 0;
+            -ms-flex: 0 0 70%;
+                flex: 0 0 70%;
     }
     .ar_infow_tow_span {
         width: 80%;
@@ -87,15 +93,15 @@
 
 
 @media all and (max-width:1199px){
-    .ar_registerLogin_area_sectionSpan::after {
+    .ar_registerLogin_area_sectionSpan:after {
         width: 30%;
         right: 75%;
     }
-    .ar_registerLogin_area_sectionSpan::before {
+    .ar_registerLogin_area_sectionSpan:before {
         /* top: 100%; */
         /* background-size: 100%; */
     }
-    .ar_singin_area_section::before {
+    .ar_singin_area_section:before {
         top: 77%;
     }
     .ar_info_maincont_tab a {
@@ -118,7 +124,9 @@
         display: none;
     }
     .ar_dashboard_main_content_area {
-        flex: 0 0 100% ;
+        -webkit-box-flex: 0;
+            -ms-flex: 0 0 100% ;
+                flex: 0 0 100% ;
         padding-right: 0px;
     }
     .desktop_header{
@@ -128,14 +136,24 @@
         display: block;
     }
     .ar_barsLogo{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        align-items: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }
     .ar_mobile_header_area{
         display: block;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        align-items: center;
-        justify-content: space-between;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
         background-color: #2267B4;
         padding: 15px 30px;
     }
@@ -158,10 +176,12 @@
         top: -50px;
         right: -100%;
         z-index: 999;
+        -webkit-transition: .5s;
         transition: .5s;
     }
     .active{
         right: 0;
+        -webkit-transition: .5s;
         transition: .5s;
     }
 
@@ -179,10 +199,10 @@
 
 
 @media all and (max-width:991px){
-    .ar_registerLogin_area_section::before {
+    .ar_registerLogin_area_section:before {
         width: 19%;
     }
-    .ar_singin_area_section.ar_singin_area_section::before {
+    .ar_singin_area_section.ar_singin_area_section:before {
         top: 85%;
     }
 
@@ -197,7 +217,10 @@
     }
 
     .ar_info_tab_form_area {
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
     .ar_info_form_group textarea {
         width: 100%;
@@ -212,13 +235,13 @@
     .ar_infow_tow_span {
         width: 100%;
     }
-    .ar_registerLogin_area_sectionSpan.extralogin::before {
+    .ar_registerLogin_area_sectionSpan.extralogin:before {
         top: 80%;
     }
     .ar_info_form_group.codeIn p span {
         left: 10px;
     }
-    .ar_info_form_group.codeIn::after {
+    .ar_info_form_group.codeIn:after {
         left: 55px;
     }
     .ar_info_form_group.extracode {
@@ -229,11 +252,11 @@
 
 
 @media all and (max-width:767px){
-    .ar_registerLogin_area_section::before {
+    .ar_registerLogin_area_section:before {
         width: 19%;
         background-size: 100%;
     }
-    .ar_registerLogin_area_sectionSpan::after {
+    .ar_registerLogin_area_sectionSpan:after {
         width: 50%;
         right: 55%;
         height: 15%;
@@ -252,13 +275,13 @@
     .ar_registerLogin_area_sectionSpan {
         padding: 100px 0px;
     }
-    .ar_registerLogin_area_sectionSpan::before {
+    .ar_registerLogin_area_sectionSpan:before {
         top: 70%;
         background-size: 100%;
         width: 50%;
         z-index: -1;
     }
-    .ar_registerLogin_area_sectionSpan.reg::before {
+    .ar_registerLogin_area_sectionSpan.reg:before {
         top: 80%;
     }
     .ar_login_area_content.regIn {
@@ -266,7 +289,8 @@
     }
 
     .ar_info_maincont_tab_area .nav {
-        flex-wrap: inherit;
+        -ms-flex-wrap: inherit;
+            flex-wrap: inherit;
     }
     .ar_info_maincont_tab a img {
         width: 40px;
@@ -347,7 +371,7 @@
 
 
 @media all and (max-width:575px){
-    .ar_registerLogin_area_sectionSpan::before {
+    .ar_registerLogin_area_sectionSpan:before {
         top: 75%;
     }
     .ar_signin_area_content {
@@ -356,7 +380,7 @@
     .ar_signin_form_area h2 {
         font-size: 25px;
     }
-    .ar_registerLogin_area_sectionSpan.reg::before {
+    .ar_registerLogin_area_sectionSpan.reg:before {
         /* top: 110%; */
     }
     .ar_registerLogin_area_section {
@@ -369,7 +393,7 @@
     .ar_signin_form_area > p {
         font-size: 16px;
     }
-    .ar_registerLogin_area_sectionSpan::after {
+    .ar_registerLogin_area_sectionSpan:after {
         width: 57%;
     }
     .ar_info_mainContent_area {
@@ -387,10 +411,10 @@
 
 
 @media all and (max-width:450px){
-    .ar_registerLogin_area_sectionSpan::after {
+    .ar_registerLogin_area_sectionSpan:after {
         right: 70%;
     }
-    .ar_registerLogin_area_section::before {
+    .ar_registerLogin_area_section:before {
         width: 35%;
         background-size: 70%;
         height: 20%;
@@ -405,13 +429,13 @@
     .ar_signin_form_area > p {
         padding: 20px 0px;
     }
-    .ar_registerLogin_area_sectionSpan::before {
+    .ar_registerLogin_area_sectionSpan:before {
         top: 82%;
     }
-    .ar_registerLogin_area_sectionSpan.reg::before {
+    .ar_registerLogin_area_sectionSpan.reg:before {
         top: 85%;
     }
-    .ar_singin_area_section.ar_singin_area_section::before {
+    .ar_singin_area_section.ar_singin_area_section:before {
         top: 92%;
     }
     .ar_img_right a img {

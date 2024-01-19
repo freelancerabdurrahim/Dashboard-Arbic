@@ -19,7 +19,9 @@
     }
     .ar_info_form_left, 
     .ar_info_form_right {
-        flex: 0 0 36%;
+        -webkit-box-flex: 0;
+            -ms-flex: 0 0 36%;
+                flex: 0 0 36%;
     }
 }
 @media all and (max-width:1499px){
@@ -53,7 +55,9 @@
     }
     .ar_info_form_left, 
     .ar_info_form_right {
-        flex: 0 0 40%;
+        -webkit-box-flex: 0;
+            -ms-flex: 0 0 40%;
+                flex: 0 0 40%;
     }
     
 }
@@ -121,7 +125,7 @@
         margin-right: -13px;
     }
     .ar_info_form_group.codeIn p span {
-        top: 39px;
+        top: 38px;
         left: 10px;
     }
     
@@ -254,6 +258,9 @@
     }
     .ar_info_form_group.extracode {
         width: 100%;
+    }
+    .ar_info_form_group.sa:after{
+        left: 35px;
     }
     
 }

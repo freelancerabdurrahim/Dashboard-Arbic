@@ -574,6 +574,7 @@ ul{
 
 .navigation ul li a .icon ion-icon {
   font-size: 28px;
+  font-size: 28px;
   font-size: 1.75rem;
 }
 
@@ -1648,7 +1649,7 @@ ul{
 	font-size: 14px;
 	font-weight: 400;
 	position: absolute;
-	top: 40px;
+	top: 38px;
 	left: 90px;
 	margin-top: 0px;
 }
@@ -1658,7 +1659,7 @@ ul{
 	background: #949494;
 	width: 1px;
 	height: 20px;
-	top: 46px;
+	top: 42px;
 	left: 134px;
 }
 .ar_info_form_group.codeIn input{
@@ -1731,6 +1732,27 @@ ul{
 	padding: 10px 10px;
 	scrollbar-width: none;
 }
+
+.ar_info_form_group select option:hover {
+    color: #000;
+	background-color: red;
+  }
+
+  .ar_info_form_group select:focus>option:checked {
+	background: yellow;
+	/* selected */
+  }
+
+
+
+
+
+
+
+
+
+
+
 .ar_info_form_group select{
 	scrollbar-width: none;
 	background: #ddd;
@@ -1763,4 +1785,8 @@ ul{
 }
 .ar_info_form_group.codeIn:after {
 	left: 55px;
+}
+
+.ar_info_form_group.sa:after{
+	left: 35px;
 }

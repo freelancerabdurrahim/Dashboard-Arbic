@@ -1738,10 +1738,9 @@ ul{
 	background-color: red;
   }
 
-  .ar_info_form_group select:focus>option:checked {
+  /* .ar_info_form_group select:focus>option:checked {
 	background: yellow;
-	/* selected */
-  }
+  } */
 
 
 

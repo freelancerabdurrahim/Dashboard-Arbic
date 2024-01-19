@@ -1789,3 +1789,9 @@ ul{
 .ar_info_form_group.sa:after{
 	left: 35px;
 }
+.ar_signIn_form_group.register p span {
+    top: 32px;
+}
+.ar_signIn_form_group.register:after {
+    top: 33px;
+}
